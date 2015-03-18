@@ -1,0 +1,19 @@
+{
+  "name": "bitmask",
+  "version": "0.1.0",
+  "description": "A small package to convert integers to bit arrays and back, with some utilities",
+  "main": "src/bitmask.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bitmask"
+  ],
+  "author": "Gian Marco Toso",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-uglify": "^0.8.0"
+  }
+}

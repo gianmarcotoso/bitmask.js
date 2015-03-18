@@ -1,0 +1,25 @@
+{
+  "name": "bitmask",
+  "version": "0.1.0",
+  "authors": [
+    "Gian Marco Toso <gianmarco.toso@gmail.com>"
+  ],
+  "description": "A small package to convert integers to bit arrays and back, with some utilities",
+  "main": "src/bitmask.js",
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "bitmask"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
