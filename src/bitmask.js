@@ -34,11 +34,11 @@
 
 	var Bitmask = function( value, padding ) {
 		_padding = padding || 8;
-		if (value.constructor === Number) {
-			_integer = value;
+		if (value.constructor === Number || value.constructor === String) {
+			_integer = parseInt(value);
 			_bits = integerToArray(_integer, _padding);
 		} else if (value.constructor === Array) {
-			_bits = value;
+			_bits = value.map(function(el) { return parseInt(el) & 1 });
 			_integer = arrayToInteger(_bits);
 		} else {
 			throw "Constructor needs either a number or an array o bits";
