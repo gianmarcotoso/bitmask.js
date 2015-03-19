@@ -1,7 +1,10 @@
 ;(function(root, factory) {
 	if (typeof define === 'function' && define.amd) {
-		define('bitmask', [], function() {
-			root.Bitmask = factory();
+		define([], function() {
+			var Bitmask = factory();
+			root.Bitmask = Bitmask;
+
+			return Bitmask;
 		});
 	} else if (typeof exports !== 'undefined') {
 		module.exports = factory();
@@ -46,7 +49,7 @@
 
 		return this;
 	}
-	
+
 	Bitmask.prototype.getInteger = function() {
 		return _integer;
 	}

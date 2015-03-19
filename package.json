@@ -1,6 +1,6 @@
 {
   "name": "bitmask",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A small package to convert integers to bit arrays and back, with some utilities",
   "main": "src/bitmask.js",
   "scripts": {
